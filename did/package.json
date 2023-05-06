@@ -1,5 +1,5 @@
 {
-  "name": "staggered_did",
+  "name": "did",
   "private": true,
   "scripts": {
     "build": "slidev build",
