@@ -113,4 +113,4 @@ The regression model becomes
 ---
 
 ## What's trending in DiD? (JE forthcoming)
-<img src='trend.png'>
+<img src='/trend.png'>
