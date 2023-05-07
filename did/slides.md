@@ -4,7 +4,7 @@
 # background: https://source.unsplash.com/collection/94734566/1920x1080
 # apply any windi css classes to the current slide
 
-theme: default 
+theme: apple-basic 
 fonts:
     sans: "Open Sans"
 canvasWidth: 850
