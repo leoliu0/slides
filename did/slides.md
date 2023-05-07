@@ -3,7 +3,10 @@
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://source.unsplash.com/collection/94734566/1920x1080
 # apply any windi css classes to the current slide
-theme: apple-basic
+
+theme: default 
+fonts:
+    sans: "Open Sans"
 canvasWidth: 850
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -23,8 +26,8 @@ transition: slide-left
 <br>
 <br>
 
-# How much should we trust staggered 
-# Difference-in-Difference Estimate?
+## How much should we trust staggered 
+## Difference-in-Difference Estimate?
 <br>
 
 Andrew C. Baker , David F. Larcker , Charles C.Y. Wang 
