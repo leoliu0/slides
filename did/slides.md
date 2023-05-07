@@ -26,26 +26,23 @@ transition: slide-left
 <br>
 <br>
 
-## How much should we trust staggered 
-## Difference-in-Difference Estimate?
+# How much should we trust staggered 
+# Difference-in-Difference Estimate?
 <br>
 
 Andrew C. Baker , David F. Larcker , Charles C.Y. Wang 
 
 ---
 
-## How Much Should We Trust Differences-in-Differences Estimates?
+## Differences-in-Differences 
 
-<br>
- Marianne Bertrand, Esther Duflo, Sendhil Mullainathan
-<br>
 <br>
 
 - Basic setup:
 
   $Y_{it} = \beta_1 D_i + \beta_2Post_t + \beta_3 (D_i \times Post_t)  + \epsilon_{ist}$
 
-- Bertrand et al. (Panel with treatment at state level)
+- Bertrand, Duflo, and Mullainathan (2003) Panel with treatment at state level
 
   $Y_{ist} = A_s + B_t + \beta T_{st} + \epsilon_{ist}$
 
