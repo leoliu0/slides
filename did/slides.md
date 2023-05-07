@@ -72,8 +72,45 @@ where $A_s$ is State FE and $B_t$ is year FE
 
 ## The problematic pair
 <img src="/f3.png" style="height:100%" />
-<SlideCurrentNo /> / <SlidesTotal />
 
 ---
 
+## When is it a problem?
+- Most of the firms are treated with significant difference in timing
+- In other words, it is not too big of a worry if you have majority of firms untreated
+## Sollution?
+- Some form of structural models and imputation (Callaway and Sant'Anna, 2021 and Borusyak et.al, 2021) 🤮 
+- Stacked DiD (Gomley and Matsa, 2011 ...) 😋
 
+    -- Create event-specific clean datasets.
+---
+
+## Stacked DiD
+The idea is to stacked treated obs. with not-treated clean controls, For each event-specific treatment group, stack it with controls that never treated before the window.
+
+| time | t-3 | t-2 | t-1 | t | t+1 | t+2 | t+3 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Treated Firm 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
+| Treated Firm 2 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
+| Control Firm 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Control Firm 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| ... | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+and you do this for every events (e.g. different states receiving law change at different time) and stack them together.
+
+---
+
+## Stacked DiD (continued)
+The regression model becomes
+
+
+  $$Y_{itg} = \alpha_{ig} +\lambda_{tg} + \beta T_{it} + \epsilon_{itg}$$
+
+  $g$ indicates event-specific treatment and control group
+
+  Simulation confirms the stacked DiD are effective comparing to other remedy procedures.
+
+---
+
+## What's trending in DiD? (JE forthcoming)
+<img src='trend.png'>
