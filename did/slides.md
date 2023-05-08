@@ -34,7 +34,7 @@ Andrew C. Baker , David F. Larcker , Charles C.Y. Wang
 
 ---
 
-## Differences-in-Differences 
+## Difference-in-Difference 
 
 <br>
 
